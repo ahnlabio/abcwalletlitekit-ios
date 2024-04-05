@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/Mpc.framework/Versions/A/Resources/Info.plist</key>
-		<data>
-		OVZVZQrOaXHbEzvcyojZ8nESm4A=
-		</data>
 		<key>Headers/ABCWalletLiteKit.h</key>
 		<data>
 		dhKXAj+XDFeor9Q2zQFiXqhO7JI=
@@ -18,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		O8hhtlxfku3K1bgOzqnQREgk1sQ=
+		BHYtYZdokN30O7+9n9UDGaC4d8A=
 		</data>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		9+IYvn6KAr32xxqoLuaL5z36v/s=
+		cxl1yqebqBDO3FyVY6029ts3p5M=
 		</data>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		CDCgZhE+q8VQFlO13g+GUmI/8MI=
+		LLLTfn/pfxxFqCrDqQ/3XhYy5Sk=
 		</data>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		mr1YrKwDZM6gRgZZsv2B93mhJlo=
+		AwdTPSHB/j/PX6yFMtnu1xjYIrE=
 		</data>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		CDCgZhE+q8VQFlO13g+GUmI/8MI=
+		LLLTfn/pfxxFqCrDqQ/3XhYy5Sk=
 		</data>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		kJvdDTV+qrjh4dORDWnBPazkjZY=
+		rl40Xt0cOB+UpGjq1Ohlqb8cr4k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,23 +43,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/Mpc.framework/Resources</key>
-		<dict>
-			<key>symlink</key>
-			<string>Versions/Current/Resources</string>
-		</dict>
-		<key>Frameworks/Mpc.framework/Versions/A/Resources/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			I9rzLEyhZ40dSG8yvDLgaXIvRBiFSiCIKHU/Pvt+Hrg=
-			</data>
-		</dict>
-		<key>Frameworks/Mpc.framework/Versions/Current</key>
-		<dict>
-			<key>symlink</key>
-			<string>A</string>
-		</dict>
 		<key>Headers/ABCWalletLiteKit.h</key>
 		<dict>
 			<key>hash2</key>
@@ -82,35 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jqZQ5y8jhaocztUJuuqRcdWpxUcJMXICqV3zXg8jTGE=
+			JUN6mhztss9x13r47jjVt9Kn/9rCnLp1b/Q3If6S0bM=
 			</data>
 		</dict>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CEktM49/kEVu7ofSFaPc8oOd0b0zBKqYpC1dM8a+tLE=
+			EuN3Ns0QdeG9K4sZDnNdA0XDHKBipxev5LjJwyaCtMg=
 			</data>
 		</dict>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6K6g7Av/8M4MvRcTmYOf/i6UHIwvUeyhiOtagAoOZWk=
+			POobGC6V1yWD3n3wzblrCQT3MycqF/NTk/1IGVx8Jbk=
 			</data>
 		</dict>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CEktM49/kEVu7ofSFaPc8oOd0b0zBKqYpC1dM8a+tLE=
+			EuN3Ns0QdeG9K4sZDnNdA0XDHKBipxev5LjJwyaCtMg=
 			</data>
 		</dict>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bsjZeWvxdjw+ixsxomyuePXCa1TeKN8wZ8y1W74UxpE=
+			GIQIGTr488SI6ve95kfwYR1elPkF5swE3QvxJIQEZ1c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

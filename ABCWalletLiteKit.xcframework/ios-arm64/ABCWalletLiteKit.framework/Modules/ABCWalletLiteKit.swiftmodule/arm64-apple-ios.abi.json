@@ -4237,6 +4237,69 @@
                 "usr": "s:16ABCWalletLiteKit4UtilV0D5ErrorO06DecodeE0yAESS_SitcAEmF",
                 "mangledName": "$s16ABCWalletLiteKit4UtilV0D5ErrorO06DecodeE0yAESS_SitcAEmF",
                 "moduleName": "ABCWalletLiteKit"
+              },
+              {
+                "kind": "Var",
+                "name": "RecoverEthSignaturePubkeyError",
+                "printedName": "RecoverEthSignaturePubkeyError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ABCWalletLiteKit.Util.UtilError.Type) -> (Swift.String, Swift.Int) -> ABCWalletLiteKit.Util.UtilError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Swift.Int) -> ABCWalletLiteKit.Util.UtilError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UtilError",
+                            "printedName": "ABCWalletLiteKit.Util.UtilError",
+                            "usr": "s:16ABCWalletLiteKit4UtilV0D5ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(message: Swift.String, code: Swift.Int)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ABCWalletLiteKit.Util.UtilError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UtilError",
+                            "printedName": "ABCWalletLiteKit.Util.UtilError",
+                            "usr": "s:16ABCWalletLiteKit4UtilV0D5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16ABCWalletLiteKit4UtilV0D5ErrorO025RecoverEthSignaturePubkeyE0yAESS_SitcAEmF",
+                "mangledName": "$s16ABCWalletLiteKit4UtilV0D5ErrorO025RecoverEthSignaturePubkeyE0yAESS_SitcAEmF",
+                "moduleName": "ABCWalletLiteKit"
               }
             ],
             "declKind": "Enum",
@@ -6439,6 +6502,40 @@
             "declKind": "Func",
             "usr": "s:16ABCWalletLiteKit4UtilV14gasApiMetaswap7chainIdAC0G8ResponseVSS_tKF",
             "mangledName": "$s16ABCWalletLiteKit4UtilV14gasApiMetaswap7chainIdAC0G8ResponseVSS_tKF",
+            "moduleName": "ABCWalletLiteKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "recoverEthSignaturePubkey",
+            "printedName": "recoverEthSignaturePubkey(hashHex:signatureHex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16ABCWalletLiteKit4UtilV25recoverEthSignaturePubkey7hashHex09signatureJ0S2S_SStKF",
+            "mangledName": "$s16ABCWalletLiteKit4UtilV25recoverEthSignaturePubkey7hashHex09signatureJ0S2S_SStKF",
             "moduleName": "ABCWalletLiteKit",
             "declAttributes": [
               "AccessControl"
