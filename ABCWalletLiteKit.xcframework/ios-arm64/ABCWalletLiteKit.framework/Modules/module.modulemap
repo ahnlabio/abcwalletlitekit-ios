@@ -1,0 +1,6 @@
+framework module ABCWalletLiteKit {
+  umbrella header "ABCWalletLiteKit.h"
+  export *
+
+  module * { export * }
+}

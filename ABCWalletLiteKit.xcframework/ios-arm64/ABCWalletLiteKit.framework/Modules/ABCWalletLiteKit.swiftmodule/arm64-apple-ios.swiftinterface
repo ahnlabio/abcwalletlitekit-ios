@@ -1,0 +1,121 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ABCWalletLiteKit
+@_exported import ABCWalletLiteKit
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct DekeyMPC {
+  public init()
+  public struct KeyShare : Swift.Codable {
+    public var uid: Swift.String?
+    public var wid: Swift.Int?
+    public var sid: Swift.String?
+    public var ucpubkey: Swift.String?
+    public var ourpubkey: Swift.String?
+    public var pvencstr: Swift.String?
+    public var iserr: Swift.Bool?
+    public var errmsg: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct CheckPassowrdResult : Swift.Codable {
+    public var matched: Swift.Bool?
+    public var iserr: Swift.Bool?
+    public var errmsg: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public enum MPCError : Swift.Error {
+    case GenerateKeyShareError(message: Swift.String, code: Swift.Int)
+    case SignError(message: Swift.String, code: Swift.Int)
+    case RecoverKeyShareError(message: Swift.String, code: Swift.Int)
+    case EncryptToBase64Error(message: Swift.String, code: Swift.Int)
+    case CheckPasswordError(message: Swift.String, code: Swift.Int)
+    case CheckPasswordByShareError(message: Swift.String, code: Swift.Int)
+    case DecodeError(message: Swift.String, code: Swift.Int)
+    case UnlockError(message: Swift.String, code: Swift.Int)
+    case ExportPrivateKeyError(message: Swift.String, code: Swift.Int)
+  }
+  public struct UnlockResult : Swift.Codable {
+    public var uid: Swift.String?
+    public var wid: Swift.Int?
+    public var sid: Swift.String?
+    public var ethaddress: Swift.String?
+    public var sigr: Swift.String?
+    public var sigs: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func generateKeyShare(aesEncKey: Swift.String, serverName: Swift.String, port: Swift.String, path: Swift.String, uid: Swift.String, wid: Swift.Int, keyid: Swift.Int, accessToken: Swift.String, tls: Swift.Bool) throws -> ABCWalletLiteKit.DekeyMPC.KeyShare
+  public func sign(aesEncKey: Swift.String, serverName: Swift.String, port: Swift.String, path: Swift.String, myAddress: Swift.String, uid: Swift.String, wid: Swift.Int, messageHS: Swift.String, pvEncStr: Swift.String, accessToken: Swift.String, tls: Swift.Bool) throws -> Swift.String
+  public func recoverKeyShare(aesEncKey: Swift.String, serverName: Swift.String, port: Swift.String, path: Swift.String, myAddress: Swift.String, uid: Swift.String, wid: Swift.Int, accessToken: Swift.String, tls: Swift.Bool) throws -> ABCWalletLiteKit.DekeyMPC.KeyShare
+  public func encryptToBase64(plainText: Swift.String) throws -> Swift.String
+  public func checkPassword(plaintext: Swift.String, encrypted: Swift.String) throws -> Swift.String
+  public func checkPasswordByShare(plaintext: Swift.String, pvEncStr: Swift.String) throws -> Swift.String
+  public func unlock(hashStr: Swift.String, aesEncKey: Swift.String, pvEncStr: Swift.String) throws -> ABCWalletLiteKit.DekeyMPC.UnlockResult
+  public static func requiresMainQueueSetup() -> Swift.Bool
+  public func constantsToExport() -> [Swift.AnyHashable : Any]!
+}
+public struct DekeyMPCService {
+  public struct KeyShareInfo : Swift.Codable {
+    public var share: ABCWalletLiteKit.DekeyMPC.KeyShare
+    public var encryptPassword: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public init(mpcServerName: Swift.String, mpcPort: Swift.String, mpcPath: Swift.String? = nil)
+  public func generateShare(password: Swift.String, accessToken: Swift.String) throws -> ABCWalletLiteKit.DekeyMPCService.KeyShareInfo
+  public func recoverShare(uid: Swift.String, wid: Swift.Int, sid: Swift.String, password: Swift.String, accessToken: Swift.String) throws -> ABCWalletLiteKit.DekeyMPCService.KeyShareInfo
+  public func sign(encryptPassword: Swift.String, uid: Swift.String, wid: Swift.Int, sid: Swift.String, hash: Swift.String, pvencstr: Swift.String, accessToken: Swift.String) throws -> Swift.String
+  public func encryptToBase64(plaintext: Swift.String) throws -> Swift.String
+  public func checkPassword(plaintext: Swift.String, encrypted: Swift.String) throws -> Swift.Bool
+  public func checkPasswordByShare(plaintext: Swift.String, pvencstr: Swift.String) throws -> Swift.Bool
+  public func unlock(hashStr: Swift.String, encryptPassword: Swift.String, pvencstr: Swift.String) throws -> ABCWalletLiteKit.DekeyMPC.UnlockResult
+}
+public struct Util {
+  public init()
+  public enum UtilError : Swift.Error {
+    case GenerateUuidV4Error(message: Swift.String, code: Swift.Int)
+    case MpcSignConcatError(message: Swift.String, code: Swift.Int)
+    case DecimalToHexStringError(message: Swift.String, code: Swift.Int)
+    case DecimalGweiToDecimalWeiError(message: Swift.String, code: Swift.Int)
+    case GasApiMetaswapError(message: Swift.String, code: Swift.Int)
+    case DecodeError(message: Swift.String, code: Swift.Int)
+  }
+  public struct Request : Swift.Codable {
+    public var method: Swift.String
+    public var params: [Swift.String]
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct MetaswapResponse : Swift.Codable {
+    public var low: ABCWalletLiteKit.Util.MetaswapItem?
+    public var medium: ABCWalletLiteKit.Util.MetaswapItem?
+    public var high: ABCWalletLiteKit.Util.MetaswapItem?
+    public var estimatedBaseFee: Swift.String?
+    public var networkCongestion: Swift.Float64?
+    public var latestPriorityFeeRange: [Swift.String]?
+    public var historicalPriorityFeeRange: [Swift.String]?
+    public var historicalBaseFeeRange: [Swift.String]?
+    public var priorityFeeTrend: Swift.String?
+    public var baseFeeTrend: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct MetaswapItem : Swift.Codable {
+    public var suggestedMaxPriorityFeePerGas: Swift.String?
+    public var suggestedMaxFeePerGas: Swift.String?
+    public var minWaitTimeEstimate: Swift.Int32?
+    public var maxWaitTimeEstimate: Swift.Int32?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func mpcSignConcat(sigStr: Swift.String) throws -> Swift.String
+  public func generateUuidV4() throws -> Swift.String
+  public func decimalToHexString(decimalString: Swift.String) throws -> Swift.String
+  public func decimalGweiToDecimalWei(decimalGweiString: Swift.String) throws -> Swift.String
+  public func gasApiMetaswap(chainId: Swift.String) throws -> ABCWalletLiteKit.Util.MetaswapResponse
+}
