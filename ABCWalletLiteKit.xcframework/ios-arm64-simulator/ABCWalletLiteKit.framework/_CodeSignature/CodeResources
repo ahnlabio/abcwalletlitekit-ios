@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3Hh0bDiZ3SRM5DRk/3KpqRfJiAM=
+		Rf8QdRHfD9U7HUP+f35icr66ABc=
 		</data>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bRGqFw9Y8OeCXrGe0rUbUyeNxyk=
+		ByeNZsZf58EemPNkJWZF/B5AoAo=
 		</data>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		62jZtIMRgH7oHsWO8e+OtTgTETc=
+		9dVUj90+DPPV60ei/33RU38xcJA=
 		</data>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bRGqFw9Y8OeCXrGe0rUbUyeNxyk=
+		ByeNZsZf58EemPNkJWZF/B5AoAo=
 		</data>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ry8o52DR9r8ktf24evxdOZVTWuk=
+		AORvQfP+ZWUXdHBrELTY+Glr0po=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -68,28 +68,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UFuVnjoq4h+AK0rFnX6LoNxSms+6NYSHSD5YF8wHI6U=
+			r5z5zo3GwKSinci6lqUw4qGH9fISA4Huvzs9xmbJZiE=
 			</data>
 		</dict>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dWgQs2u5KvxA9P76f2+an6UmO+bHuXBJwfS/jvaij24=
+			pNvugOgMn0vYB6EXrSOICs+WNk+ijOc2yIkYTJl1Vrk=
 			</data>
 		</dict>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UFuVnjoq4h+AK0rFnX6LoNxSms+6NYSHSD5YF8wHI6U=
+			r5z5zo3GwKSinci6lqUw4qGH9fISA4Huvzs9xmbJZiE=
 			</data>
 		</dict>
 		<key>Modules/ABCWalletLiteKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/JlnlXnoSlmteVpWBfy8ewO0wrPXFzk9kkO6tRXwEXE=
+			RowSpyHpCzz3OWuon6lUoFWsIGbeT61oJnLeuO/mtV0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
